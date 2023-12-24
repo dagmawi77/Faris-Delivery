@@ -3,6 +3,7 @@ import 'package:my_delivery/screens/onboarding/components/slanding_clipper.dart'
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:my_delivery/screens/login_screen.dart';
+import 'package:my_delivery/screens/signup_screen.dart';
 
 class OnboardingScreenThree extends StatelessWidget {
   @override
@@ -125,11 +126,11 @@ class OnboardingScreenThree extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(right: appPadding),
                     child: FloatingActionButton(
-                      //onPressed: () => print('Onboarding Done'),
-                      onPressed: () {
-                        // Navigate to login screen
-                        Navigator.pushNamed(context, LoginScreen.routeName);
-                      },
+                      onPressed: () => print('Onboarding Done'),
+                      // onPressed: () {
+                      //   // Navigate to login screen
+                      //   Navigator.pushNamed(context, SignupScreen.routeName);
+                      // },
                       backgroundColor: white,
                       child: Icon(
                         Icons.done_rounded,
